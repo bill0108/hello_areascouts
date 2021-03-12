@@ -1,0 +1,119 @@
+@import "bootstrap";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "base/_breakpoints";
+@import "base/_init";
+
+body, input, textarea {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+}
+
+//navbar section
+.navbar {
+  padding: 0 !important;
+  background: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255,255,255,0.9) !important;
+  border-bottom: 1px solid #eee;
+
+  .logo {
+    height: auto !important;
+    width: 300px !important;
+    margin-bottom: 5px;
+    @include breakpoint(sm) {
+      width: 200px !important;
+    }
+  }  
+
+  .navbar-toggler {
+    float: right;
+    width: 64px;
+    height: 60px;
+    cursor: pointer;
+    background: rgba(48, 49, 50, 0.8);
+    border-radius: 3px;
+  }
+  
+  .navbar-container {
+    font-size: $font-size-lg;
+    max-width: 1140px;
+
+    @include breakpoint(sm) {
+      padding: 20px;
+      background: $text-dark;
+    }
+
+    .nav-item {
+      padding: 0px 20px;
+      @include breakpoint(sm) {
+        text-align: center;
+      }
+    }
+
+    .nav-link {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      padding: 23px;
+      color: $text-dark;
+      @include breakpoint(sm) {
+        color: $bg-white;
+      }
+    }
+
+    .nav-item:hover {
+      background: $main-color;
+      .nav-link {
+        color: $bg-white;
+      }
+    }
+
+    .active {
+      background: $main-color;
+      .nav-link {
+        color: $bg-white;
+      }
+    }
+
+    .to-glow {
+      background: $main-color;
+      -webkit-animation: bgcolorchange 3s infinite; /* Chrome, Safari, Opera */ 
+      animation: 3s infinite bgcolorchange;
+      .nav-link {
+        color: $bg-white;
+      }
+    }
+
+    @keyframes bgcolorchange {
+      0% {
+        background-color: $secondary-color;
+      }
+    }
+
+  }
+}
+//end navbar
+
+//footer section
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.footer-bottom {
+  padding: 22px 0 28px;
+  background-color: $bg-dark;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+//end footer
