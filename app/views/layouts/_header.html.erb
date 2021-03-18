@@ -12,10 +12,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item <%= 'active' if current_page?(root_path) %>">
-                        <%= link_to 'HOME', "#", class:"nav-link" %>
+                        <%= link_to 'HOME', root_path, class:"nav-link" %>
                     </li>
-                    <li class="nav-item">
-                        <%= link_to 'ABOUT US', "#", class:"nav-link" %>
+                    <li class="nav-item <%= 'active' if current_page?(about_us_path) %>">
+                        <%= link_to 'ABOUT US', about_us_path, class:"nav-link" %>
                     </li>
                     <li class="nav-item">
                         <%= link_to 'OUR TEAM', "#", class:"nav-link" %>

@@ -1,0 +1,155 @@
+//cover
+.cover-image {
+  position: relative;
+  top: 0;
+  z-index: -1;
+  @include breakpoint(sm) {
+    top: 100px;
+  }
+}
+
+.cover-inner {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-bottom: 0px !important;
+  @include breakpoint(sm) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.cover-wrapper {
+  margin-bottom: 50px;
+}
+
+.site-cover {
+  max-width: 100%;
+  height: auto;
+}
+//end cover
+
+
+//partners section
+.partners-section {
+  position: relative;
+  top: 35px;
+  @include breakpoint(sm) {
+    top: 70px;
+  }
+}
+
+.partners-h1 {
+  text-align: center;
+  color: $secondary-color;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  @include breakpoint(sm) {
+    font-size: 40px;
+  }
+}
+
+.partners-mb {
+  margin-bottom: 50px;
+}
+
+.partners-logo {
+  width: 250px !important;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+//end sections
+
+
+.sports-section {
+  position: relative;
+  top: 35px;
+  @include breakpoint(sm) {
+    top: 70px;
+  }
+}
+
+//sports section
+.sports-h1 {
+  text-align: left;
+  color: $secondary-color;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  @include breakpoint(sm) {
+    font-size: 40px;
+  }
+}
+
+.as-sign-up-btn {
+  padding: .7rem;
+  background: $main-color;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.as-sign-up-btn:hover {
+  text-decoration: none;
+  background: $secondary-color;
+}
+
+
+.sports-wrapper {
+  color: $main-color;
+  .fa-lg {
+    font-size: 1.77em;
+  }
+  .sports-h4 {
+    text-transform: uppercase;
+    font-size: 30px !important;
+    line-height: 34px;
+    font-weight: 900;
+  }
+  
+}
+//end sports
+
+//socials sections
+.socials-section {
+  position: relative;
+  top: 60px;
+  @include breakpoint(sm) {
+    top: 70px;
+  }
+}
+
+.socials {
+  overflow: hidden;
+  color: #bfbfbf;
+  background-color: #262626;
+  text-align: center;
+}
+
+.stm-social {
+  padding: 35px 49px 33px 49px;
+  width: 100%;
+}
+
+.stm-social:hover {
+  background-color: #3a3939;
+}
+
+.sports-a {
+  color: #bfbfbf;
+  font-size: 32px;
+}
+
+.sports-a:hover {
+  color: #bfbfbf;
+}
+//social end
