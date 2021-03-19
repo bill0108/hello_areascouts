@@ -7,6 +7,7 @@
 @import "base/_init";
 @import "pages/home";
 @import "pages/about";
+@import "pages/board";
 
 body, input, textarea {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -106,6 +107,33 @@ body, input, textarea {
         background-color: $secondary-color;
       }
     }
+
+   .dropdown-wrapper {
+    width: 215px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: $bg-dark;
+    text-align: left;
+    @include breakpoint(sm) {
+      background: $bg-dark !important;
+      text-align: center;
+      width: 100%;
+    }
+    .dropdown-item {
+      padding: 15px;
+      color: $bg-white;
+    }
+    .dropdown-item:hover {
+      background: $main-color;
+    }
+   }
+
+   .navdropdown {
+    @include breakpoint(sm) {
+      background: $bg-dark !important;
+    }
+   }
 
   }
 }

@@ -17,8 +17,20 @@
                     <li class="nav-item <%= 'active' if current_page?(about_us_path) %>">
                         <%= link_to 'ABOUT US', about_us_path, class:"nav-link" %>
                     </li>
-                    <li class="nav-item">
-                        <%= link_to 'OUR TEAM', "#", class:"nav-link" %>
+                    <li class="nav-item dropdown navdropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            OUR TEAM
+                        </a>
+                        <div class="dropdown-menu dropdown-wrapper" aria-labelledby="navbarDropdown">
+                            <%= link_to "BOARD", board_path, class:"dropdown-item"%>
+                            <%= link_to "DIRECTORS/OPERATIONS", "#", class:"dropdown-item"%>
+                            <%= link_to "BASEBALL", "#", class:"dropdown-item"%>
+                            <%= link_to "SOFTBALL", "#", class:"dropdown-item"%>
+                            <%= link_to "FOOTBALL", "#", class:"dropdown-item"%>
+                            <%= link_to "VOLLEYBALL", "#", class:"dropdown-item"%>
+                            <%= link_to "RUGBY", "#", class:"dropdown-item"%>
+                        </div>
                     </li>
                     <li id="to-glow" class="nav-item to-glow">
                         <%= link_to 'GET EVALUATED', "#", class:"nav-link" %>
