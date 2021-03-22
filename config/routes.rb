@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#home'
-  get '/about-us', to: 'pages#about'
+  scope '/about-us' do
+    get '/', to: 'pages#about', as: :about
+    get '/base-assesstment', to: 'pages#base'
+    get '/athlete-assesstment', to: 'pages#athlete'
+    get '/training-tools', to: 'pages#tools'
+  end
+
   get '/board', to: 'pages#board'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
