@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  
   scope '/about-us' do
     get '/', to: 'pages#about', as: :about
     get '/base-assesstment', to: 'pages#base'
@@ -7,5 +8,8 @@ Rails.application.routes.draw do
     get '/training-tools', to: 'pages#tools'
   end
 
-  get '/board', to: 'pages#board'
+  scope '/our-team' do
+    get '/board', to: 'pages#board'
+    get '/directors-operations', to: 'pages#directors'
+  end
 end
