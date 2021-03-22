@@ -8,8 +8,11 @@
 @import "pages/home";
 @import "pages/about";
 @import "pages/board";
+@import "pages/directors";
 
-body, input, textarea {
+body,
+input,
+textarea {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: $font-size-normal;
   font-weight: $font-weight-normal;
@@ -28,7 +31,7 @@ body, input, textarea {
 .navbar {
   padding: 0 !important;
   background: rgba(0, 0, 0, 0.85);
-  background-color: rgba(255,255,255,0.9) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   border-bottom: 1px solid #eee;
 
   @include breakpoint(sm) {
@@ -39,10 +42,11 @@ body, input, textarea {
     height: auto !important;
     width: 300px !important;
     margin-bottom: 5px;
+
     @include breakpoint(sm) {
       width: 200px !important;
     }
-  }  
+  }
 
   .navbar-toggler {
     float: right;
@@ -52,7 +56,7 @@ body, input, textarea {
     background: rgba(48, 49, 50, 0.8);
     border-radius: 3px;
   }
-  
+
   .navbar-container {
     font-size: $font-size-lg;
     max-width: 1140px;
@@ -64,6 +68,7 @@ body, input, textarea {
 
     .nav-item {
       padding: 0px 20px;
+
       @include breakpoint(sm) {
         text-align: center;
       }
@@ -74,6 +79,7 @@ body, input, textarea {
       padding-left: 0 !important;
       padding: 23px;
       color: $text-dark;
+
       @include breakpoint(sm) {
         color: $bg-white;
       }
@@ -81,6 +87,7 @@ body, input, textarea {
 
     .nav-item:hover {
       background: $main-color;
+
       .nav-link {
         color: $bg-white;
       }
@@ -88,6 +95,7 @@ body, input, textarea {
 
     .active {
       background: $main-color;
+
       .nav-link {
         color: $bg-white;
       }
@@ -95,8 +103,10 @@ body, input, textarea {
 
     .to-glow {
       background: $main-color;
-      -webkit-animation: bgcolorchange 3s infinite; /* Chrome, Safari, Opera */ 
+      -webkit-animation: bgcolorchange 3s infinite;
+      /* Chrome, Safari, Opera */
       animation: 3s infinite bgcolorchange;
+
       .nav-link {
         color: $bg-white;
       }
@@ -108,35 +118,39 @@ body, input, textarea {
       }
     }
 
-   .dropdown-wrapper {
-    width: 300px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background: $bg-dark;
-    text-align: left;
-    @include breakpoint(sm) {
-      background: $bg-dark !important;
-      text-align: center;
-      width: 100%;
-    }
-    .dropdown-item {
-      padding: 15px;
-      color: $bg-white;
-    }
-    .dropdown-item:hover {
-      background: $main-color;
-    }
-   }
+    .dropdown-wrapper {
+      width: 300px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      background: $bg-dark;
+      text-align: left;
 
-   .navdropdown {
-    @include breakpoint(sm) {
-      background: $bg-dark !important;
+      @include breakpoint(sm) {
+        background: $bg-dark !important;
+        text-align: center;
+        width: 100%;
+      }
+
+      .dropdown-item {
+        padding: 15px;
+        color: $bg-white;
+      }
+
+      .dropdown-item:hover {
+        background: $main-color;
+      }
     }
-   }
+
+    .navdropdown {
+      @include breakpoint(sm) {
+        background: $bg-dark !important;
+      }
+    }
 
   }
 }
+
 //end navbar
 
 //footer section
@@ -158,3 +172,46 @@ body, input, textarea {
   font-family: 'Open Sans', sans-serif;
 }
 //end footer
+
+/* headlines with lines */
+.decorated {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: center;
+
+  @include breakpoint(sm) {
+    font-size: 18px;
+  }
+}
+
+.decorated>span {
+  position: relative;
+  display: inline-block;
+}
+
+.decorated>span:before,
+.decorated>span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid #f2711c;
+  width: 100vw;
+  margin: 0 20px;
+}
+
+.decorated>span:before {
+  right: 100%;
+}
+
+.decorated>span:after {
+  left: 100%;
+}
+
+@include breakpoint(sm) {
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+}

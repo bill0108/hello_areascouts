@@ -22,42 +22,6 @@
     margin-bottom: 50px;
   }
 
-  /* headlines with lines */
-  .decorated {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-    text-transform: uppercase;
-    overflow: hidden;
-    text-align: center;
-    @include breakpoint(sm) {
-      font-size: 18px;
-    }
-  }
-
-  .decorated>span {
-    position: relative;
-    display: inline-block;
-  }
-
-  .decorated>span:before,
-  .decorated>span:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    border-bottom: 2px solid #f2711c;
-    width: 100vw;
-    margin: 0 20px;
-  }
-
-  .decorated>span:before {
-    right: 100%;
-  }
-
-  .decorated>span:after {
-    left: 100%;
-  }
-
   .fixed-height {
     min-height: 700px;
     @media screen and (min-width: 768px) and (max-width: 1024px) { 

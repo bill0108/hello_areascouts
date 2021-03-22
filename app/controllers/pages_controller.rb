@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def board
   end
+
+  def directors
+  end
 end
