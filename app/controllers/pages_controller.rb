@@ -7,4 +7,13 @@ class PagesController < ApplicationController
 
   def board
   end
+
+  def base
+  end
+
+  def athlete
+  end
+
+  def board
+  end
 end

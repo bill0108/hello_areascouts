@@ -2,8 +2,10 @@
 .aboutus-section {
   position: relative;
   top: 80px;
+  margin-bottom: 150px;
   @include breakpoint(sm) {
     top: 100px;
+    margin-bottom: 100px;
   }
 }
 
@@ -67,9 +69,11 @@
 //aboutbase
 .aboutbase-section {
   position: relative;
-  top: 150px;
+  top: 80px;
+  margin-bottom: 150px;
   @include breakpoint(sm) {
-    top: 130px;
+    top: 100px;
+    margin-bottom: 100px;
   }
 
   .aboutbase-h3 {
@@ -102,12 +106,12 @@
 //platform start
 .platform-section {
   position: relative;
-  top: 220px;
-  margin-bottom: 250px;
+  top: 80px;
+  margin-bottom: 150px;
 
   @include breakpoint(sm) {
-    top: 160px;
-    margin-bottom: 150px;
+    top: 100px;
+    margin-bottom: 100px;
   }
 
   .platform-header {
@@ -169,5 +173,31 @@
     }
   }
 }
+
+
+//tool section
+.tool-section {
+  position: relative;
+  top: 80px;
+  margin-bottom: 150px;
+  @include breakpoint(sm) {
+    top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .tool-h3 {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 900;
+    @include breakpoint(sm) {
+      font-size: 24px;
+    }
+  }
+}
+// tool end
 
 

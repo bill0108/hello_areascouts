@@ -14,8 +14,18 @@
                     <li class="nav-item <%= 'active' if current_page?(root_path) %>">
                         <%= link_to 'HOME', root_path, class:"nav-link" %>
                     </li>
-                    <li class="nav-item <%= 'active' if current_page?(about_us_path) %>">
-                        <%= link_to 'ABOUT US', about_us_path, class:"nav-link" %>
+                    <li class="nav-item dropdown navdropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu dropdown-wrapper" aria-labelledby="navbarDropdown">
+                            <%= link_to "ABOUT AREA SCOUTS", about_path, class:"dropdown-item"%>
+                            <%= link_to "AREA SCOUTS B.A.S.E ASSESSMENT", base_assesstment_path, class:"dropdown-item"%>
+                            <%= link_to "AREA SCOUTS ATHLETE ASSESSMENT", athlete_assesstment_path, class:"dropdown-item"%>
+                            <%= link_to "AREA SCOUTS ENDORSED PRODUCTS", "https://areascouts.shop/collections/all-products", class:"dropdown-item"%>
+                            <%= link_to "AREA SCOUTS ENDORSED TRAINING TOOLS", training_tools_path, class:"dropdown-item"%>
+                        </div>
                     </li>
                     <li class="nav-item dropdown navdropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
