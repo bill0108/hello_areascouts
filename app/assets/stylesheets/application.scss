@@ -9,6 +9,7 @@
 @import "pages/about";
 @import "pages/board";
 @import "pages/directors";
+@import "pages/baseball";
 
 body,
 input,
@@ -212,6 +213,7 @@ textarea {
 
 @include breakpoint(sm) {
   .mt-5 {
-    margin-top: 0px !important;
+    margin-top: 15px !important;
   }
 }
+

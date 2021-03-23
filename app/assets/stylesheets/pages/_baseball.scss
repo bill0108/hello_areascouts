@@ -1,4 +1,4 @@
-.directors-section {
+.baseball-section {
     position: relative;
     top: 80px;
     margin-bottom: 150px;
@@ -8,28 +8,21 @@
       margin-bottom: 50px;
     }
     
-    .fixed-height {
-      min-height: 920px;
-      @media screen and (min-width: 768px) and (max-width: 1024px) { 
-        min-height: 1330px;
-      }
-    }
-  
-    .directors-image-wrapper {
+    .baseball-image-wrapper {
       text-align: center;
       margin: 0;
     }
   
-    .directors-image-wrapper2 {
+    .baseball-image-wrapper2 {
       text-align: center;
       margin-top: 50px;
     }
   
-    .directors-header {
+    .baseball-header {
       margin-bottom: 50px;
     }
   
-    .directors-member-wrapper {
+    .baseball-member-wrapper {
       background: #fff; 
       border-radius: 3px; 
       border: solid #f2711c 1px; 
@@ -40,7 +33,7 @@
         margin-top: 15px;
       }
   
-      .directors-profile-pic {
+      .baseball-profile-pic {
         width: 150px; 
         height: 150px; 
         border-radius: 50%; 
@@ -49,12 +42,12 @@
         margin-right: auto;
       }
   
-      .directors-p {
+      .baseball-p {
         line-height: 30px;
         font-size: 15px;
       }
   
-      .directors-h4 {
+      .baseball-h4 {
         font-size: 30px;
         font-weight: 900;
         text-transform: uppercase;
@@ -63,7 +56,7 @@
         }
       }
   
-      .directors-h5 {
+      .baseball-h5 {
         font-size: 24px;
         font-weight: 900;
         text-transform: uppercase;

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   scope '/our-team' do
     get '/board', to: 'pages#board'
     get '/directors-operations', to: 'pages#directors'
+    get '/baseball-team', to: 'pages#baseball'
   end
 end

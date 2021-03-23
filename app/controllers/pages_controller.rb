@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def directors
   end
+
+  def baseball
+  end
 end
