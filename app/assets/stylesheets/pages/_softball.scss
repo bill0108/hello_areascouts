@@ -1,0 +1,70 @@
+.softball-section {
+  position: relative;
+  top: 80px;
+  margin-bottom: 150px;
+
+  @include breakpoint(sm) {
+    top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .softball-image-wrapper {
+    text-align: center;
+    margin: 0;
+  }
+
+  .softball-image-wrapper2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .softball-header {
+    margin-bottom: 50px;
+  }
+
+  .softball-member-wrapper {
+    background: #fff;
+    border-radius: 3px;
+    border: solid #f2711c 1px;
+    padding: 15px;
+    text-align: center;
+
+    @include breakpoint(sm) {
+      margin-top: 15px;
+    }
+
+    .softball-profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .softball-p {
+      line-height: 30px;
+      font-size: 15px;
+    }
+
+    .softball-h4 {
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+
+      @include breakpoint(sm) {
+        font-size: 18px;
+      }
+    }
+
+    .softball-h5 {
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+
+      @include breakpoint(sm) {
+        font-size: 18px;
+      }
+    }
+  }
+}
