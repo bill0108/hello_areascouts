@@ -1,0 +1,70 @@
+.football-section {
+    position: relative;
+    top: 80px;
+    margin-bottom: 150px;
+  
+    @include breakpoint(sm) {
+      top: 100px;
+      margin-bottom: 50px;
+    }
+  
+    .football-image-wrapper {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .football-image-wrapper2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    .football-header {
+      margin-bottom: 50px;
+    }
+  
+    .football-member-wrapper {
+      background: #fff;
+      border-radius: 3px;
+      border: solid #f2711c 1px;
+      padding: 15px;
+      text-align: center;
+  
+      @include breakpoint(sm) {
+        margin-top: 15px;
+      }
+  
+      .football-profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      .football-p {
+        line-height: 30px;
+        font-size: 15px;
+      }
+  
+      .football-h4 {
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+  
+        @include breakpoint(sm) {
+          font-size: 18px;
+        }
+      }
+  
+      .football-h5 {
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+  
+        @include breakpoint(sm) {
+          font-size: 18px;
+        }
+      }
+    }
+  }

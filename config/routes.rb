@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     get '/directors-operations', to: 'ourteam#directors'
     get '/baseball-team', to: 'ourteam#baseball'
     get '/softball-team', to: 'ourteam#softball'
+    get '/football-team', to: 'ourteam#football'
   end
 end
