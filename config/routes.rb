@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     get '/baseball-team', to: 'ourteam#baseball'
     get '/softball-team', to: 'ourteam#softball'
     get '/football-team', to: 'ourteam#football'
+    get '/volleyball-team', to: 'ourteam#volleyball'
+    get '/rugby-team', to: 'ourteam#rugby'
   end
 end
