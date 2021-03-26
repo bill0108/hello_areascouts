@@ -1,0 +1,32 @@
+.volleyball-section {
+  position: relative;
+  top: 80px;
+  margin-bottom: 120px;
+
+  @include breakpoint(sm) {
+    top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .volleyball-image-wrapper {
+    text-align: center;
+    margin: 0;
+  }
+
+  .volleyball-header {
+    margin-bottom: 50px;
+  }
+
+  .volleyball-wrapper {
+    .volleyball-h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 60px;
+      font-weight: 900;
+      @include breakpoint(sm) {
+        font-size: 40px;
+      }
+    }
+  }
+}
