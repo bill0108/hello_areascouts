@@ -1,0 +1,58 @@
+.evaluation-section {
+  position: relative;
+  top: 100px;
+  margin-bottom: 120px;
+
+  @include breakpoint(sm) {
+    top: 120px;
+    margin-bottom: 50px;
+  }
+
+  .evaluation-image-wrapper {
+    vertical-align: top;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    .evaluation-image {
+      width: 800px;
+      height: auto;
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+
+  .evaluation-text-wrapper {
+    margin-bottom: 50px;
+    .evaluation-h1 {
+      text-align: center;
+      color: #F37A2D;
+      font-size: 60px;
+      line-height: 64px;
+      font-weight: 900;
+      text-transform: none;
+      font-style: italic;
+      @include breakpoint(sm) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .evaluation-profile-wrapper {
+    @include breakpoint(sm) {
+      margin-bottom: 100px;
+    }
+    .evaluation-box {
+      background: #f4f5f8;
+      text-align: center;
+      font-style: italic;
+      padding: 35px;
+      font-size: 18px;
+      line-height: 30px
+    }
+  }
+
+
+
+ 
+}
