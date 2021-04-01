@@ -18,4 +18,6 @@ Rails.application.routes.draw do
     get '/volleyball-team', to: 'ourteam#volleyball'
     get '/rugby-team', to: 'ourteam#rugby'
   end
+  
+  resources :blogs, only: :index
 end

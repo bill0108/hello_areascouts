@@ -45,8 +45,8 @@
                     <li id="to-glow" class="nav-item to-glow">
                         <%= link_to 'GET EVALUATED', get_evaluated_path, class:"nav-link" %>
                     </li>
-                    <li class="nav-item">
-                        <%= link_to 'AREA SCOUTS BLOG', "#", class:"nav-link" %>
+                    <li class="nav-item <%= 'active' if current_page?(blogs_path) %>">
+                        <%= link_to 'AREA SCOUTS BLOG', blogs_path, class:"nav-link" %>
                     </li>
                     <li class="nav-item">
                         <%= link_to 'SHOP', "https://areascouts.shop/?ref=Scouts2020", class:"nav-link", target:"_blank" %>
