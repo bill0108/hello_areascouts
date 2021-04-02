@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   end
   
   resources :blogs, only: :index
+  #temporary route
+  get '/blogs/1', to: 'blogs#show'
 end
