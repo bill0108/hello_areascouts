@@ -386,4 +386,76 @@
       text-transform: uppercase;
     }
   }
+
+  .comments-area {
+    margin-top: 60px;
+    @include breakpoint(sm) {
+      margin-top: 100px;
+    }
+    .comments-title {
+      font-size: 36px !important;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #000000;
+      text-align: left;
+      background: transparent;
+      border-bottom: solid 1px #d8d8d8;
+      padding: 0 0 33px 0;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .comment-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .comment-item {
+      list-style: none;
+      margin-top: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 0;
+      margin-bottom: 10px;
+
+      .comment-body {
+        border-bottom: solid 1px #d8d8d8;
+        padding-bottom: 16px;
+
+        .comment-author-image {
+          margin-right: 20px;
+          float: left;
+          @include breakpoint(sm) {
+            float: none;
+            margin: 15px 0;
+          }
+          @media screen and (min-width: 768px) and (max-width: 1024px) { 
+            margin-right: 20px;
+            float: left;
+          }
+        }
+
+        .comment-author {
+          position: relative;
+          overflow: hidden;
+          .comment-author {
+            font-size: 18px;
+            letter-spacing: 0;
+            margin-right: 25px;
+            font-weight: 700;
+            color: #151515;
+          }
+
+          p {
+            margin-top: 14px;
+            line-height: 25px; 
+            margin: 10px 0 10px 0;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
 }
