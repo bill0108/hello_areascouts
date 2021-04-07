@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get '/get-evaluated', to: 'pages#evaluation'
+  get '/contact', to: 'pages#contact'
   
   scope '/about-us' do
     get '/', to: 'aboutus#about', as: :about

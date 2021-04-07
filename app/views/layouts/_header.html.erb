@@ -51,8 +51,8 @@
                     <li class="nav-item">
                         <%= link_to 'SHOP', "https://areascouts.shop/?ref=Scouts2020", class:"nav-link", target:"_blank" %>
                     </li>
-                    <li class="nav-item">
-                        <%= link_to 'CONTACT US', "#", class:"nav-link" %>
+                    <li class="nav-item <%= 'active' if current_page?(contact_path) %>">
+                        <%= link_to 'CONTACT US', contact_path, class:"nav-link" %>
                     </li>
                 </ul>
             </div>
